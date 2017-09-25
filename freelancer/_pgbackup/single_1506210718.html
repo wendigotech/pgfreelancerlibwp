@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en" wp-site wp-site-theme-name="" wp-site-theme-slug="" wp-site-themes-folder="" wp-site-master-page="index.html">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Pinegrow Web Editor">
+        <title wp-no-export>Page Title</title>
+        <!-- Bootstrap core CSS -->
+        <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" wp-enqueue-style wp-enqueue-style-version="3.3.6">
+        <link href="assets/font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css" wp-enqueue-style wp-enqueue-style-version="4.6.3">
+        <!-- Custom styles for this template -->
+        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+        <link href="style.css" rel="stylesheet" type="text/css" wp-enqueue-style wp-enqueue-style-version="1.2">
+    </head>
+    <body wp-body-class>
+        <div class="site-container" data-pg-name="site-container">
+            <header id="masthead" class="site-header" data-pgc="master.header">
+                <nav class="navbar navbar-default navbar-fixed-top" role="navigation" data-pgc="main.navbar">
+                    <div class="container-fluid">
+                        <div class="navbar-header site-branding">
+                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a class="navbar-brand site-title" href="#" wp-site-name wp-if-custom="has_custom_logo()" wp-if-custom-not="true" wp-home-url wp-home-url-set="href">STARTER THEME 1.2</a>
+                            <a class="navbar-brand logo-navbar-brand" href="#" wp-call-function="pg_starter_the_custom_logo()" wp-hide wp-else-if>
+                                <img src="images/starter_custom_logo@2x.png" />
+                            </a>
+                        </div>
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav navbar-right" wp-nav-menu wp-nav-menu-type="bootstrap" wp-nav-menu-theme-location="primary" wp-nav-menu-depth="2">
+                                <li>
+                                    <a href="#">Link</a>
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                                    <ul class="dropdown-menu">
+                                        <li>
+                                            <a href="#">Action</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Another action</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Something else here</a>
+                                        </li>
+                                        <li class="divider"></li>
+                                        <li>
+                                            <a href="#">Separated link</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+                <div class="jumbotron jumbo-bkg" wp-featured-bck wp-featured-bck-size="full" wp-featured-bck-size-use-default-header="true" wp-call-function="'#'.get_header_textcolor()" wp-call-function-echo="true" wp-call-function-set="style" wp-call-function-set-style="color" data-pgc="main.jumbotron">
+                    <div class="container dimmer jumbotron-inner">
+                        <h1 wp-site-name>PG WP Starter Theme</h1>
+                        <p wp-site-desc>A Bootstrap Starter Theme Template for Pinegrow WP</p>
+                        <p><a class="btn btn-primary btn-lg btn-outline" role="button" href="#more" wp-call-function="'#'.get_header_textcolor()" wp-call-function-echo="true" wp-call-function-set="style" wp-call-function-set-style="color" wp-call-function-2="'#'.get_header_textcolor()" wp-call-function-echo-2="true" wp-call-function-2-set="style" wp-call-function-2-set-style="border-color">Read more</a></p>
+                    </div>
+                </div>
+                <div class="container-fluid breadcrumbs-section" id="more" data-pg-name="Breadcrumbs" data-pgc="std.breadcrumbs">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="breadcrumbs-cnt" data-pg-name="Breadcrumbs">
+                                <p wp-include-template-part wp-include-template-part-slug="assets/breadcrumbs/breadcrumb">Breadcrumbs ≫ Placeholder</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div wp-call-function="wp_enqueue_script( 'comment-reply' );" wp-if-is-singular></div>
+            </header>
+            <main class="site-inner site-content" wp-site-content data-pg-name="site-inner">
+                <section>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-9">
+                                <div wp-include-template-part wp-include-template-part-slug="template-parts/content-single" wp-loop data-pgc="content_single" data-pgc-field="part">
+                                    <article class="article" wp-post-class wp-the-id>
+                                        <header data-pg-name="Entry Header" class="entry-header">
+                                            <h2 wp-the-title class="entry-title">The Title</h2>
+                                            <span data-pg-name="Edit Post"><a href="http://" wp-edit-post-link=" &#40;Edit&#41;"> (Edit)</a></span>
+                                        </header>
+                                        <div data-pg-name="Entry Meta" class="entry-meta">
+                                            <p>Filed in <span wp-the-category=", ">CATEGORY</span> | Posted by <a href="http://" wp-href="author_posts"><span wp-the-author="">AUTHOR</span></a> on <a href="<?php echo get_day_link(get_post_time('Y'), get_post_time('m'), get_post_time('j')); ?>"><span wp-the-date="" wp-the-date-set="content" wp-the-date-show-same="true">DATE</span></a></p>
+                                            <hr />
+                                        </div>
+                                        <div data-pg-name="Entry Content" class="entry-content">
+                                            <p wp-the-content>Repository-hosted Themes are required to support display of comments on static Pages as well as on single blog Posts.  This static Page has comments, and these comments should be displayed.<br />
+If the Theme includes a custom option to prevent static Pages from displaying comments, such option must be disabled (i.e. so that static Pages display comments) by default.<br />
+Also, verify that this Page does not display taxonomy information (e.g. categories or tags) or time-stamp information (Page publish date/time).</p>
+                                        </div>
+                                        <footer data-pg-name="Entry Footer" class="entry-footer">
+                                            <div wp-link-pages>
+                                                <p>Pages: 1 2 3 4</p>
+                                            </div>
+                                            <div data-pg-name="JP Sharing Button" class="jetpack-sharing-buttons" data-pgc="jetpack.sharingbuttons">
+                                                <php>
+                                                    // Move the Jetpack Sharing and Like buttons //
+                                                    // https://jetpack.com/2013/06/10/moving-sharing-icons/ //
+                                                
+                                                    if ( function_exists( 'sharing_display' ) ) {
+                                                    sharing_display( '', true );
+                                                }
+                                                
+                                                if ( class_exists( 'Jetpack_Likes' ) ) {
+                                                    $custom_likes = new Jetpack_Likes;
+                                                    echo $custom_likes->post_likes( '' );
+                                                }
+                                                </php>
+                                                <img src="previews/jp.sharingbuttons.png" wp-no-export />
+                                            </div>
+                                            <div class="jetpack-related-posts" wp-if-custom="class_exists( 'Jetpack_RelatedPosts' )" data-pgc="jp.relatedposts">
+                                                <php>
+                                                echo do_shortcode( '[jetpack-related-posts]' );
+                                                </php>
+                                                <img src="previews/jp.relatedposts.png" width="600" wp-no-export />
+                                            </div>
+                                        </footer>
+                                    </article>
+                                </div>
+                                <div wp-if-comments-open wp-if-get-comments-number wp-comments-template data-pgc="comments">
+                                    <php>
+                                    if ( post_password_required() ) {
+                                    	return;
+                                    }
+                                    </php>
+                                    <div class="comments-area" id="comments">
+                                        <h3 wp-comments-title="One comment on &ldquo;%2$s&rdquo;" wp-if-have-comments wp-comments-title-multiple="%1$s comments on &ldquo;%2$s&rdquo;">Comments Title</h3>
+                                        <div wp-list-comments wp-list-comments-style="ul" wp-with-prev-if></div>
+                                        <p wp-if-custom="! comments_open() && get_comments_number() && post_type_supports( get_post_type(), 'comments' ) " class="no-comments label label-warning">Comments are closed</p>
+                                        <div wp-paginate-comments-links wp-paginate-comments-links-set="content" id="comments-pagination">« Previous 1 2 3 4 5 Next »</div>
+                                        <h3 wp-call-function="comment_form(array('title_reply'=>'Leave a comment'));">Leave a cool comment</h3>
+                                    </div>
+                                </div>
+                                <ul class="pager posts-navigation text-uppercase" wp-if-have-posts data-pgc="pg_singlepost_pager">
+                                    <li class="previous">
+                                        <a href="#" wp-prev-post-link="%link" wp-prev-post-link-link="%title">PREVIOUS POST TITLE</a>
+                                    </li>
+                                    <li class="next">
+                                        <a href="#" wp-next-post-link="%link" wp-next-post-link-link="%title">NEXT POST TITLE</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-3">
+                                <aside wp-dynamic-sidebar="right_sidebar" id="main_sidebar" data-pgc="PG_right_sidebar">
+                                    <h3>Widget Title</h3>
+                                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                </aside>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <footer class="site-footer" id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div wp-dynamic-sidebar="footer01_sidebar" class="col-sm-3">
+                            <aside class="">
+                                <h3>Footer #01</h3>
+                                <dl>
+                                    <dt>Description lists</dt>
+                                    <dd>A description list is perfect for defining terms.</dd>
+                                    <dt>Euismod</dt>
+                                    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                </dl>
+                            </aside>
+                        </div>
+                        <div wp-dynamic-sidebar="footer02_sidebar" class="col-sm-3">
+                            <aside class="">
+                                <h3>Footer #02</h3>
+                                <dl>
+                                    <dt>Description lists</dt>
+                                    <dd>A description list is perfect for defining terms.</dd>
+                                    <dt>Euismod</dt>
+                                    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                </dl>
+                            </aside>
+                        </div>
+                        <div wp-dynamic-sidebar="footer03_sidebar" class="col-sm-3">
+                            <aside class="">
+                                <h3>Footer #03</h3>
+                                <dl>
+                                    <dt>Description lists</dt>
+                                    <dd>A description list is perfect for defining terms.</dd>
+                                    <dt>Euismod</dt>
+                                    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                </dl>
+                            </aside>
+                        </div>
+                        <div wp-dynamic-sidebar="footer04_sidebar" class="col-sm-3">
+                            <aside class="">
+                                <h3>Footer #04</h3>
+                                <dl>
+                                    <dt>Description lists</dt>
+                                    <dd>A description list is perfect for defining terms.</dd>
+                                    <dt>Euismod</dt>
+                                    <dd>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</dd>
+                                </dl>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <!-- Bootstrap core JavaScript
+    ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="assets/js/jquery.min.js" wp-enqueue-script></script>
+        <script src="bootstrap/js/bootstrap.min.js" wp-enqueue-script wp-enqueue-script-version="3.3.6"></script>
+        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+        <script src="assets/js/ie10-viewport-bug-workaround.js" wp-enqueue-script></script>
+    </body>
+</html>
